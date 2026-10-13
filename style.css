@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+}
+
+.header-nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:navy;
+    padding: 20px;
+}
+
+.nav-txt > li > a{
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.header-nav > .company-title > a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-nav nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: white;
+
+}
+
+.header-nav nav ul li{
+    margin: 0 10px;
+}
+
+.company-title{
+    font-weight: bold;
+    color: white
+}
+
+.main-content{
+    padding: 15px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.overview{
+    margin-bottom: 20px;
+}
+
+.impact{
+    margin-bottom: 20px;
+}
+
+.agriculture{
+    margin-bottom: 20px;
+}
+
+.sources{
+    margin-bottom: 20px;
+}
+
+/*Mobile first development by Josue Cruz*/
+@media screen and (max-width: 768px){
+    .header-nav{
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:navy;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .nav-txt > li > a{
+        color: white;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .header-nav nav ul{
+        list-style: none;;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        color: white;
+
+    }
+
+    .header-nav nav ul li{
+        margin: 0 10px;
+    }
+
+    .company-title{
+        font-weight: bold;
+        color: white
+    }
+
+    .main-content{
+        padding: 15px;
+        background-color: #f4f4f4;
+        min-height: 100vh;
+    }
+}
