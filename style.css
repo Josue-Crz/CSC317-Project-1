@@ -2,13 +2,15 @@ body{
     margin: 0;
 }
 
-.header-nav{
+.header-nav {
     position: sticky;
     top: 0;
+    z-index: 100;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:navy;
+    background-color: navy;
     padding: 20px;
 }
 
@@ -90,7 +92,6 @@ body{
         padding: 0;
         display: flex;
         color: white;
-
     }
 
     .header-nav nav ul li{
@@ -107,4 +108,120 @@ body{
         background-color: #f4f4f4;
         min-height: 100vh;
     }
+
+    /*Mobile Footer by John*/
+    footer {
+    flex-direction: column;
+    gap: 20px;
+    }
+
+    .footer-brand,
+    .footer-explore,
+    #sources-section,
+    .footer-bottom {
+        flex: 0 1 auto;
+        width: 100%;
+    }
+}
+
+/*Desktop Footer by John*/
+footer {
+    background-color: #0B1F45;
+    color: white;
+    padding: 40px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+footer a {
+    color: #C7D5EC;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-brand {
+    flex: 2;
+}
+
+.footer-explore,
+#sources-section {
+    flex: 1;
+}
+
+.footer-bottom {
+    flex: 0 0 100%;
+    border-top: 1px solid #425779;
+    padding-top: 20px;
+    text-align: center;
+    color: #B3C5E0;
+    font-size: 0.9rem;
+
+}
+
+.footer-explore ul,
+#sources-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.fact-card {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    background-color: #0B1F45;
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.carousel-prev,
+.carousel-next {
+    background-color: #0B1F45;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    background-color: #1C3D70;
+}
+
+.carousel-counter {
+    font-weight: bold;
+    font-size: 1.1rem;
 }
