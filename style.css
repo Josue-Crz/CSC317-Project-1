@@ -1,5 +1,5 @@
 body{
-    margin: 0;
+    margin: 0px;
 }
 
 .header-nav{
@@ -10,6 +10,15 @@ body{
     align-items: center;
     background-color:navy;
     padding: 20px;
+}
+
+.titleNavBar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
 }
 
 .nav-txt > li > a{
@@ -44,26 +53,132 @@ body{
 }
 
 .main-content{
-    padding: 15px;
-    background-color: #f4f4f4;
+    background-image: url('https://www.ipsnews.net/Library/2026/10/A-mother-and-her_091026.jpg');
+    padding: 5px;
     min-height: 100vh;
 }
 
 .overview{
+    background-color: navy;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 
 .impact{
-    margin-bottom: 20px;
+    background-color: sandybrown;
+    margin: 0px;    
 }
+
 
 .agriculture{
-    margin-bottom: 20px;
+    background-color: lightgreen;
+    margin: 0px;
 }
 
-.sources{
-    margin-bottom: 20px;
+.agriculture-border > p{
+    margin: 0px;
 }
+
+.stats-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.stats-section > div{
+    margin-top: 2px;
+    padding: 6px 12px;
+    background-color: navy;
+    border-radius: 5px;
+}
+
+.stats-section > div > *{
+    overflow-wrap: break-word;
+    word-break: break-word;
+    padding: 6px 12px;
+    color: white;
+}
+
+.overview-border{
+    background-color: white;
+    border-radius: 0px;
+    
+}
+
+.overview-border  > p {
+    margin-top: 10px;
+}
+
+
+
+.agriculture-border{
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.footer{
+    margin-top: auto;
+}
+
+
+/*hamburger stuff(pc)*/
+
+
+.hamburger{
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1828/1828859.png');
+    background-size: contain;
+    cursor: pointer;
+    display: flex;
+    margin-left: auto;
+    height: 20px;
+    width: 20px;
+    flex-shrink: 0;
+}
+
+.header-nav nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hamburger-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+
+.hamburger-nav{
+    display: none;
+    background-color: navy;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+}
+
+
+.hamburger-nav.active{
+    display: block;
+}
+
+.header-nav nav .hamburger-nav ul{
+    flex-direction: row;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+.header-nav nav .hamburger-nav ul li{
+    margin: 0;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
 
 /*Mobile first development by Josue Cruz*/
 @media screen and (max-width: 768px){
@@ -72,20 +187,57 @@ body{
         top: 0;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center; 
         background-color:navy;
-        padding: 20px;
-        flex-direction: column;
+        padding: 10px;
+        flex-direction: row;
     }
+
+    
+    
+    
+    .hamburger{
+        display: flex;
+    }
+
+    .header-nav nav{
+        flex-wrap: wrap;
+
+    }
+
+    .hamburger-nav{
+        display: none;
+        width: 100%;
+        background-color: navy;
+    }
+
+    .hamburger-nav.active{
+        display: block;
+        width: 100%;
+    }
+
+    .header-nav nav .hamburger-nav ul{
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    .header-nav nav .hamburger-nav ul li{
+        margin: 0;
+        padding: 12px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+    
 
     .nav-txt > li > a{
         color: white;
-        font-size: 1.2em;
+        font-size: 16px;
         margin-bottom: 10px;
     }
 
     .header-nav nav ul{
-        list-style: none;;
+        list-style: none;
         margin: 0;
         padding: 0;
         display: flex;
@@ -107,4 +259,49 @@ body{
         background-color: #f4f4f4;
         min-height: 100vh;
     }
+
+    
+
+    .impact{
+        margin-bottom: 5px;
+    }
+
+    .agriculture{
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    
+
+    .sources{
+        margin-bottom: 20px;
+        background-color: lightgray;
+    }
+
+    .sources-border > p{
+        background-color: lightpink;
+    }
+
+    .stats-section{
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    .stats-section > div{
+        padding: 0px;
+        background-color: navy;
+        border-radius: 5px;
+    }
+
+    .stats-section > div > *{
+        overflow-wrap: break-word;
+        word-break: break-word;
+        padding: 6px 12px;
+        color: white;
+    }
 }
+
