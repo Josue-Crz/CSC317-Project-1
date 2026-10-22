@@ -23,3 +23,13 @@ prevButton.addEventListener("click", function() {
     currentIndex = (currentIndex - 1 + cards.length) % cards.length;
     updateCarousel();
 });
+
+// initilize hamburger logic stuff
+const hamburger = document.getElementById('hamburger-btn');
+const navMenu = document.getElementById('hamburger-list-nav');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+  console.log("hamburger clicked, toggled active class on both hamburger and navMenu");
+});
